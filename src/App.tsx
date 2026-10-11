@@ -5,6 +5,14 @@ import { SaudeColetores } from './componentes/SaudeColetores'
 import { VendasDoDia } from './componentes/VendasDoDia'
 import { useDados } from './dados/contexto'
 
+// Demonstrações estáticas dos projetos que alimentam este painel
+const DEMOS = [
+  { nome: 'Coletor diário', url: 'https://coletor-diario.vercel.app' },
+  { nome: 'Webhook de vendas', url: 'https://webhook-vendas-one.vercel.app' },
+  { nome: 'Orçamento SINAPI', url: 'https://orcamento-sinapi-puce.vercel.app' },
+  { nome: 'Código', url: 'https://github.com/MateusGitBoss/Painel-operacao' },
+]
+
 export default function App() {
   const { modoDemo } = useDados()
   const [fonteSelecionada, setFonteSelecionada] = useState<string>()
@@ -21,6 +29,13 @@ export default function App() {
             Dados de demonstração
           </span>
         )}
+        <nav aria-label="Outras demonstrações" className="demos">
+          {DEMOS.map((demo) => (
+            <a key={demo.url} href={demo.url} target="_blank" rel="noreferrer">
+              {demo.nome}
+            </a>
+          ))}
+        </nav>
       </header>
 
       <main className="grade">

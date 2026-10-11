@@ -69,6 +69,14 @@ body {
   font-size: 1.25rem;
 }
 
+.demos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  margin-left: auto;
+  font-size: 0.875rem;
+}
+
 .grade {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr));
