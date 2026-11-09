@@ -2,6 +2,8 @@
 
 [![CI](https://github.com/MateusGitBoss/Painel-operacao/actions/workflows/ci.yml/badge.svg)](https://github.com/MateusGitBoss/Painel-operacao/actions/workflows/ci.yml)
 
+**Demonstração online:** https://painel-operacao-kappa.vercel.app
+
 Painel em React + TypeScript para quem opera a loja: mostra se o robô de coleta rodou bem ([coletor-diario](https://github.com/MateusGitBoss/coletor-diario)) e como estão as vendas do dia ([webhook-vendas](https://github.com/MateusGitBoss/webhook-vendas)).
 
 **Para quem não é técnico:** é a tela que a equipe deixa aberta durante o dia. Em cima, uma lista dos sites que o robô visita, com um selo verde, amarelo ou vermelho dizendo se a última coleta deu certo. Do lado, quantas vendas entraram hoje, quanto faturou, os reembolsos e um gráfico por hora. Embaixo, o histórico das últimas coletas com a mensagem de erro quando algo falhou. A tela se atualiza sozinha a cada minuto.
@@ -81,7 +83,7 @@ Os testes trocam a fonte de dados por uma falsa (`ProvedorDados`) e testam o que
 
 ## Como este projeto foi construído
 
-Construído com o Claude Code como ferramenta de desenvolvimento, com cada mudança entrando por pull request. O roteiro de estudo em [`docs/ENTREVISTA.md`](docs/ENTREVISTA.md) explica cada decisão.
+Construído com o Claude Code como ferramenta de desenvolvimento, com cada mudança entrando por pull request revisado.
 
 ## Licença
 
